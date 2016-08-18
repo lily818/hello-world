@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美淘网，每天淘一次</title>
+  <style type="text/css">
+      
+ body{font-weight:bold;
+	   font-size:30px;
+	   text-align:center;
+	   margin:0px; /*清除页留白*/
+  }
+   
+  #nav, #mtop, #mbottom { /*设置宽度固定且居中的版块*/
+	width: 985px;      /*内容固定宽度*/
+	margin: 0px auto;  /*固定宽度且居中*/
+}
+#middle #allnav {
+	width: 100%;    /*自适应宽度，占据整个屏幕*/
+	background-color: #ff7701;
+	height: 39px;
+	border: 1px dashed #ff7701;
+}
+/*设置导航条*/
+#middle #nav {
+	background-color: #963;
+	height: 39px;
+}
+/*设置全部商品分类的二级菜单的位置*/ 
+#mtop #navlist {
+	float: left;
+	width: 121px;
+	height: 271px;
+	border: 1px solid #963;
+	margin-right: 5px;  /*右外边距*/
+}
+#mtop #content {
+	float: left;
+	width: 850px;
+	height: 273px;
+}
+/*设置分类搜索*/
+#mtop #content #typesearch {
+	height: 54px;
+	border: 1px solid #03F;
+}
+/*本周精选*/
+#mtop #content #week {
+	height: 214px;
+	border: 1px solid #F00;
+}
+/*团购精选*/
+#mbottom #goods {
+	width: 735px;
+	float: left;
+	border: 1px solid #C0C;
+	height: 500px;
+}
+/*侧边栏*/
+#mbottom #side {
+	width: 240px;
+	float: right;
+	border: 1px solid #6F9;
+	height: 500px;
+}
+  </style>
+</head>
+
+<body>
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="99"></iframe>
+  <div id="middle">
+    <div id="allnav">   <!--宽度100%-->
+       <div id="nav">#nav 导航条</div>  <!--导航的内容宽度固定-->
+    </div>
+    <div id="mtop"> <!--上面版块-->
+       <div id="navlist">#navlist 导航菜单的下拉列表</div>
+       <div id="content">
+         <div id="typesearch">#typesearch 分类搜索</div>
+         <div id="week">#week 本周精选</div>
+       </div>
+    </div>
+    <div id="mbottom">  <!--下面版块-->
+       <div id="goods">#goods 团购精选</div>
+       <div id="side">#side 侧边栏</div>
+    </div>
+  </div>
+  <iframe src="foot.html" width="100%" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
